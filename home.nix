@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ lib, config, pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -20,6 +20,7 @@
   home.packages = [
     pkgs.fd
     pkgs.hub
+    pkgs.zsh-powerlevel10k
     pkgs.terraform
   ];
 
@@ -112,11 +113,26 @@
 	"ripgrep"
 	"thefuck"
 	"zoxide"
+        # TODO: zsh-syntax-highlighting
       ];
-      theme = "robbyrussell";
       # this option is only from a newer version of zoxide oh-my-zsh plugin
       extraConfig = "export ZOXIDE_CMD_OVERRIDE=cd";
     };
+
+    plugins = [
+      {
+        name = "powerlevel10k";
+	src = pkgs.zsh-powerlevel10k;
+	file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      }
+      {
+        name = "powerlevel10k-config";
+	src = lib.cleanSource ./p10k-config;
+	file = "p10k.zsh";
+      }
+    ];
+
+    syntaxHighlighting.enable = true;
   };
   
 }
