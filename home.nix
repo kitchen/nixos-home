@@ -15,26 +15,12 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+  nixpkgs.config.allowUnfree = true;
+
   home.packages = [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
-    pkgs.btop
-
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
-
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
+    pkgs.fd
+    pkgs.hub
+    pkgs.terraform
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -67,33 +53,10 @@
     EDITOR = "nvim";
   };
 
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs.btop.enable = true;
 
-  programs.zsh = {
-    enable = true;
+  programs.fzf.enable = true;
 
-    oh-my-zsh = {
-      enable = true;
-      plugins = ["git" "thefuck" "zoxide" ];
-      theme = "robbyrussell";
-      # this option is only from a newer version of zoxide oh-my-zsh plugin
-      extraConfig = "export ZOXIDE_CMD_OVERRIDE=cd";
-    };
-  };
-
-  programs.neovim = {
-    enable = true;
-  };
-
-  programs.tmux = {
-    enable = true;
-  };
-
-  programs.thefuck = {
-    enable = true;
-  };
-  
   programs.git = {
     enable = true;
     userName = "Jeremy Kitchen";
@@ -105,6 +68,26 @@
     };
   };
 
+  programs.go.enable = true;
+  programs.home-manager.enable = true;
+
+  programs.lsd = {
+    enable = true;
+    enableAliases = true;
+  };
+
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+    defaultEditor = true;
+  };
+
+  programs.ripgrep.enable = true;
+  programs.thefuck.enable = true;
+  programs.tmux.enable = true;
+
   programs.zoxide = {
     enable = true;
     # to be replaced with oh-my-zsh plugin config option when omz upgrades
@@ -112,4 +95,28 @@
       "--cmd cd"
     ];
   };
+
+
+  programs.zsh = {
+    enable = true;
+
+    oh-my-zsh = {
+      enable = true;
+      plugins = [
+	"aws"
+	"fzf"
+        "git"
+	"github"
+	"gitfast"
+	"golang"
+	"ripgrep"
+	"thefuck"
+	"zoxide"
+      ];
+      theme = "robbyrussell";
+      # this option is only from a newer version of zoxide oh-my-zsh plugin
+      extraConfig = "export ZOXIDE_CMD_OVERRIDE=cd";
+    };
+  };
+  
 }
