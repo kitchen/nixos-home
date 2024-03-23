@@ -22,7 +22,10 @@ in
       [
 	{
 	  plugin = rose-pine-theme;
-	  extraConfig = "set -g @rose_pine_variant 'main'";
+	  extraConfig = ''
+	    set -g @rose_pine_variant 'main'
+	    set -g @rose_pine_host 'on'
+	  '';
 	}
       ];
     baseIndex = 1;
