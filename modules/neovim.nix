@@ -7,12 +7,15 @@
     vimdiffAlias = true;
     defaultEditor = true;
 
-    plugins = with pkgs.vimPlugins; [
-      catppuccin-nvim
-    ];
-    extraConfig = ''
-      set nobackup
-      colorscheme catppuccin
+    extraLuaConfig = ''
+      require("config.lazy")
     '';
+
+    extraPackages = [
+      pkgs.gcc
+      pkgs.lazygit
+    ];
   };
+
+  xdg.configFile."nvim/lua".source = ./neovim/lua;
 }
