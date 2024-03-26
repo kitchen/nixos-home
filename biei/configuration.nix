@@ -16,13 +16,7 @@
   boot.loader.grub.useOSProber = true;
 
   networking.hostName = "biei"; # Define your hostname.
-  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.wireless.networks = {
-    "I should be in Thailand" = {
-      psk = "fuckcancer";
-    };
-  };
-  
+
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
