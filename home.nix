@@ -16,6 +16,7 @@
   imports = [
     ./modules/aws.nix
     ./modules/btop.nix
+    ./modules/direnv.nix
     ./modules/fdfind.nix
     ./modules/fzf.nix
     ./modules/git.nix
