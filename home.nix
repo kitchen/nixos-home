@@ -14,23 +14,16 @@
   programs.home-manager.enable = true;
 
   imports = [
-    ./modules/aws.nix
-    ./modules/btop.nix
     ./modules/direnv.nix
-    ./modules/fdfind.nix
     ./modules/fun.nix
     ./modules/fzf.nix
-    ./modules/git.nix
     ./modules/golang.nix
-    ./modules/jq.nix
-    ./modules/lsd.nix
     ./modules/neovim.nix
-    ./modules/ripgrep.nix
     ./modules/rust.nix
     ./modules/ssh.nix
     ./modules/terraform.nix
-    ./modules/thefuck.nix
     ./modules/tmux.nix
+    ./modules/utils.nix
     ./modules/zoxide.nix
     ./modules/zsh.nix
   ];
