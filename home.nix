@@ -25,6 +25,7 @@
     ./modules/lsd.nix
     ./modules/neovim.nix
     ./modules/ripgrep.nix
+    ./modules/rust.nix
     ./modules/terraform.nix
     ./modules/thefuck.nix
     ./modules/tmux.nix
