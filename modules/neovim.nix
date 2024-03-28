@@ -14,6 +14,7 @@
     extraPackages = [
       pkgs.gcc
       pkgs.lazygit
+      pkgs.unzip
     ];
   };
 
