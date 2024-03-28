@@ -11,5 +11,8 @@
     ./utils/thefuck.nix
   ];
 
-  home.packages = [ pkgs.fd ];
+  home.packages = [
+    pkgs.fd
+    pkgs.neofetch
+  ];
 }
