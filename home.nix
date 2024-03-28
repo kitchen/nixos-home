@@ -14,9 +14,7 @@
   programs.home-manager.enable = true;
 
   imports = [
-    ./modules/direnv.nix
     ./modules/fun.nix
-    ./modules/fzf.nix
     ./modules/golang.nix
     ./modules/neovim.nix
     ./modules/rust.nix
@@ -24,7 +22,6 @@
     ./modules/terraform.nix
     ./modules/tmux.nix
     ./modules/utils.nix
-    ./modules/zoxide.nix
     ./modules/zsh.nix
   ];
 
