@@ -18,6 +18,7 @@
     ./modules/btop.nix
     ./modules/direnv.nix
     ./modules/fdfind.nix
+    ./modules/fun.nix
     ./modules/fzf.nix
     ./modules/git.nix
     ./modules/golang.nix
