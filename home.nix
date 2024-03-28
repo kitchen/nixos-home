@@ -15,11 +15,9 @@
 
   imports = [
     ./modules/fun.nix
-    ./modules/golang.nix
+    ./modules/languages.nix
     ./modules/neovim.nix
-    ./modules/rust.nix
     ./modules/ssh.nix
-    ./modules/terraform.nix
     ./modules/tmux.nix
     ./modules/utils.nix
     ./modules/zsh.nix
