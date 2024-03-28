@@ -22,6 +22,7 @@
     ./modules/fzf.nix
     ./modules/git.nix
     ./modules/golang.nix
+    ./modules/jq.nix
     ./modules/lsd.nix
     ./modules/neovim.nix
     ./modules/ripgrep.nix
