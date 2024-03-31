@@ -35,11 +35,6 @@
         hostname = "akan.kitchen.io";
       };
 
-      # the nuc
-      shihoro = {
-        hostname = "shihoro.kitchen.io";
-      };
-
       # cisco 2960 switch. not on tailnet because old.
       chitose = {
         hostname = "chitose.kitchen.io";
