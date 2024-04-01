@@ -11,8 +11,12 @@
   ];
 
   home.packages = [
+    pkgs.dig
     pkgs.fd
+    pkgs.lftp
     pkgs.neofetch
+    pkgs.wget
+    pkgs.whois
   ];
 
   programs.jq.enable = true;
