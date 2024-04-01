@@ -14,7 +14,6 @@
       ".DS_Store"
     ];
 
-
   };
 
   programs.zsh.oh-my-zsh.plugins = [

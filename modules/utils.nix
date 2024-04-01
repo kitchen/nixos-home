@@ -15,4 +15,6 @@
     pkgs.fd
     pkgs.neofetch
   ];
+
+  programs.jq.enable = true;
 }
