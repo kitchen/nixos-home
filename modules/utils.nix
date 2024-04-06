@@ -15,6 +15,7 @@
     pkgs.fd
     pkgs.lftp
     pkgs.neofetch
+    pkgs.tio
     pkgs.wget
     pkgs.whois
   ];
