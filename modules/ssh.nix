@@ -31,6 +31,7 @@
       };
 
       # 512/8gb WD thinkcentre no use for this yet, maybe a "data lake" since akan is a lake. hah no.
+      # so, not "data lake" but definitely a place where a pirate might find some treasure ;-)
       akan = {
         hostname = "akan.kitchen.io";
       };
