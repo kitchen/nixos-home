@@ -1,6 +1,7 @@
 { environment, config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [ 
+    # weird to me that "services.transmission.enable = true" doesn't install this, unlike every other similar thing, but ok
     transmission
   ];
 
@@ -8,7 +9,7 @@
     enable = true;
     settings = {
       # manually mount the device then use `nixos-generate-config` to update the hardware-configuration.nix file
-      # download-dir = "/mnt/itoigawa/torrents";;
+      # download-dir = "/mnt/itoigawa/torrents";
 
       # require encrypted peers
       encryption = 2;
@@ -20,8 +21,10 @@
 
   services.plex = {
     enable = true;
-    openFirewall = false;
+    openFirewall = true;
   };
+
+  users.users.plex.extraGroups = [ "transmission" ];
 
   services.nginx = {
     enable = true;
