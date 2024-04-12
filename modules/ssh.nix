@@ -15,25 +15,28 @@
         hostname = "taipei.kitchen.io";
       };
 
-      # 500gb/8GB crucial thinkcentre, ubuntu shell box but mostly home server now
+      # 500gb/8GB crucial thinkcentre, currently media server will likely become kube node
       okoppe = {
         hostname = "okoppe.kitchen.io";
       };
 
-      # 1TB/8gb thinkcentre, my nixos shell box
+      # 256GB/8gb kingston thinkcentre, probably going to become a kube node
       biei = {
         hostname = "biei.kitchen.io";
       };
 
-      # 512/8gb WD thinkcentre probably going to end up becoming nixos home server to replace okoppe
+      # 512/8gb WD thinkcentre probably going to become a kube node
       furano = {
         hostname = "furano.kitchen.io";
       };
 
-      # 512/8gb WD thinkcentre no use for this yet, maybe a "data lake" since akan is a lake. hah no.
-      # so, not "data lake" but definitely a place where a pirate might find some treasure ;-)
+      # 512/8gb WD thinkcentre probably going to become a kube node
       akan = {
         hostname = "akan.kitchen.io";
+      };
+
+      shihoro = {
+        hostname = "shihoro.kitchen.io";
       };
 
       # cisco 2960 switch. not on tailnet because old.
