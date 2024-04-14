@@ -35,6 +35,11 @@
         hostname = "akan.kitchen.io";
       };
 
+      # pihole
+      shari = {
+        hostname = "shari.kitchen.io";
+      };
+
       shihoro = {
         hostname = "shihoro.kitchen.io";
       };
