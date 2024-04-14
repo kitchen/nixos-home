@@ -24,9 +24,7 @@
       # taipei ecdsa key
       "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPP1SUY0xXafvoWwDuNbNqq4ut09OMGFLBkzWdgxFCCG3lfVVSDnJYG1R4WgLMhESCQkEE8K+n1LnH8AJg0n25k= kitchen@taipei.kitchen.io"
       # shihoro
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILmG1/Bs2oKqYa9UNYisZT+armcZzQRsa1mUziAp+Dsh kitchen@shihoro"
-      # biei
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB36Wvae6AQvC3s/X6RuNoC/2mGV2b+gFxmdEDX54YCK kitchen@biei"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID5XYdPQvGUj9LlV7rm2zpqil/SLQmH/gKToIjtUsJky kitchen@shihoro"
     ];
   };
 }
